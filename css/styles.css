@@ -81,7 +81,7 @@ nav h1 a {
   padding: 1% 1% 1% 2.7%;
   list-style: none;
   background-color: #eee;
-  font-size: 2em;
+  font-size: 2.3em;
   margin: 0;
   width: 46.3%;
 }
@@ -275,10 +275,8 @@ nav h1 a {
 
 #reviews-container h2 {
   color: #f58500;
-  font-size: 24pt;
+  font-size: 4em;
   font-weight: 300;
-  letter-spacing: -1px;
-  padding-bottom: 1pt;
 }
 
 #reviews-list {
@@ -300,7 +298,7 @@ nav h1 a {
 }
 
 #reviews-list li p {
-  margin: 0 0 10px;
+  margin: 0 0 1%;
 }
 
 #restaurant-hours td {
