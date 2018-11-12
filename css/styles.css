@@ -210,10 +210,10 @@ nav h1 a {
 
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
+  height: 92%;
   position: fixed;
   right: 0;
-  top: 80px;
+  top: 69px;
   width: 50%;
 }
 
