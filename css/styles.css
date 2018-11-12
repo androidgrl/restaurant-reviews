@@ -11,7 +11,6 @@ body {
   background-color: #fdfdfd;
   margin: 0;
   position: relative;
-  height: 100%;
 }
 
 ul, li {
@@ -41,7 +40,6 @@ h1, h2, h3, h4, h5, h6 {
 
 article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
-  height: 100%;
 }
 
 #maincontent {
