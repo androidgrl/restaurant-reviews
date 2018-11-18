@@ -31,6 +31,9 @@ initMap = () => {
       }).addTo(newMap);
       fillBreadcrumb();
       DBHelper.mapMarkerForRestaurant(self.restaurant, self.newMap);
+      document.getElementById('map').tabIndex = -1
+      links = document.getElementsByClassName('leaflet-control-attribution')[0].getElementsByTagName('a');
+      for (var i = 0; i < links.length; i++) { links[i].tabIndex = -1 };
     }
   });
 }
