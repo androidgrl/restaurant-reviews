@@ -1,3 +1,10 @@
+// Register SW
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js').then(function(res){
+    console.log('registered sw');
+  });
+};
+
 let restaurants,
   neighborhoods,
   cuisines
