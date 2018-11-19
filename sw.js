@@ -45,7 +45,7 @@ self.addEventListener('activate', function(event) {
 //fetch cache
 self.addEventListener('fetch', function(event) {
   event.respondWith(
-    caches.match(event.request).then(function(response) {
+    caches.match(event.request, {ignoreSearch: true}).then(function(response) {
       return response || fetch(event.request);
     }));
 });
