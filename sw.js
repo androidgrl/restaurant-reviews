@@ -1,3 +1,4 @@
+//set variables
 let currentCacheName = 'resto-app-v1';
 const urls = [
   '/',
@@ -21,6 +22,7 @@ const urls = [
   '/data/restaurants.json'
 ]
 
+//create cache
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(currentCacheName).then(function(cache) {
@@ -28,6 +30,7 @@ self.addEventListener('install', function(event) {
     }));
 });
 
+//delete old caches
 self.addEventListener('activate', function(event) {
   event.waitUntil(
     caches.keys().then(function(cacheNames) {
@@ -39,6 +42,7 @@ self.addEventListener('activate', function(event) {
     }));
 })
 
+//fetch cache
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request).then(function(response) {

@@ -1,4 +1,4 @@
-// Register SW
+// Register Service Worker
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js').then(function(res){
     console.log('registered sw');
